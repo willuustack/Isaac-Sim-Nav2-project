@@ -1,0 +1,41 @@
+# ROS2
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+
+# Isaac Sim
+*.usda.bak
+*.usd.bak
+_isaac_sim/
+kit/
+kit-app-template/
+
+# Maps (use Git LFS for large files)
+*.pgm
+*.bt
+*.pcd
+
+# Bags
+*.db3
+*.bag
+metadata.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
