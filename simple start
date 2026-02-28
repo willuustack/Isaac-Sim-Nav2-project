@@ -1,0 +1,37 @@
+To Run This Project
+Step 1: Download & Extract
+
+cd ~/ros2_ws/src
+unzip isaac_sim_nav2.zip
+
+Step 2: Run with the Interactive Script
+
+cd ~/ros2_ws
+./src/isaac_sim_nav2/run_project.sh
+
+This gives you a menu to:
+Build the project
+Run Nav2 + RViz
+Run with multi-goal navigator
+Record/replay test sessions
+
+Or Use Direct Commands
+
+# Full setup and run
+./src/isaac_sim_nav2/run_project.sh full
+
+# Just run navigation
+./src/isaac_sim_nav2/run_project.sh run
+
+# Run with waypoint navigation
+./src/isaac_sim_nav2/run_project.sh navigate
+Prerequisites on Your Machine
+Before running, make sure:
+Isaac Sim is running with ROS2 bridge enabled
+Your robot has LiDAR & odometry publishing to /scan, /odom, /tf
+ROS2 Humble is installed
+Quick Verification
+
+# Check if Isaac Sim is connected
+ros2 topic list | grep scan
+# Should show: /scan
