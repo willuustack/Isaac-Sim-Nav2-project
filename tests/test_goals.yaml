@@ -1,0 +1,32 @@
+# Test goal configuration for Isaac Sim Nav2
+# These waypoints form a square path through a warehouse-like environment
+
+initial_pose:
+  x: 0.0
+  y: 0.0
+  yaw: 0.0  # Facing positive X
+
+goals:
+  - x: 5.0
+    y: 0.0
+    qw: 1.0
+    qz: 0.0
+    description: "First waypoint - clear path along X axis"
+    
+  - x: 5.0
+    y: 5.0
+    qw: 0.707
+    qz: 0.707
+    description: "Turn and navigate to cluttered zone"
+    
+  - x: 0.0
+    y: 5.0
+    qw: 1.0
+    qz: 0.0
+    description: "Navigate through tight corridor"
+    
+  - x: 0.0
+    y: 0.0
+    qw: 0.707
+    qz: -0.707
+    description: "Return to start position"

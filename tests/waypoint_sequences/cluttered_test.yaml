@@ -1,0 +1,37 @@
+# Waypoints for testing in cluttered environments
+# Navigate through narrow passages and around obstacles
+
+initial_pose:
+  x: -5.0
+  y: -5.0
+  yaw: 0.785  # 45 degrees
+
+goals:
+  - x: -2.0
+    y: -2.0
+    qw: 0.924
+    qz: 0.383
+    description: "Entry to cluttered zone"
+    
+  - x: 0.0
+    y: 0.0
+    qw: 1.0
+    description: "Center - high obstacle density"
+    
+  - x: 2.0
+    y: 2.0
+    qw: 0.707
+    qz: 0.707
+    description: "Navigate through narrow passage"
+    
+  - x: 5.0
+    y: 0.0
+    qw: 0.383
+    qz: 0.924
+    description: "Exit to open area"
+    
+  - x: 5.0
+    y: -5.0
+    qw: 0.0
+    qz: 1.0
+    description: "Final position"

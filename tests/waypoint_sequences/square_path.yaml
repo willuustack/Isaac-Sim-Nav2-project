@@ -1,0 +1,28 @@
+# Square path for basic navigation testing
+initial_pose:
+  x: 0.0
+  y: 0.0
+  yaw: 0.0
+
+goals:
+  - x: 5.0
+    y: 0.0
+    qw: 1.0
+    description: "East"
+    
+  - x: 5.0
+    y: 5.0
+    qw: 0.707
+    qz: 0.707
+    description: "North-East"
+    
+  - x: 0.0
+    y: 5.0
+    qw: 1.0
+    description: "North"
+    
+  - x: 0.0
+    y: 0.0
+    qw: 0.707
+    qz: -0.707
+    description: "Return to origin"
